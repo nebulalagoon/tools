@@ -1,0 +1,100 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#navigation {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 40px;
+  background-color: #602a6d;
+  list-style-type: none;
+  text-align: center;
+  vertical-align: top;
+  padding: 0px;
+  margin: auto;
+  font-size: 1.4rem;
+  z-index: 10;
+}
+
+#navigation ul {
+  margin: auto;
+  padding: 0px;
+}
+
+#navigation li {
+  display: inline;
+  padding: 0px 4%;
+  font-family: "Mukta", "Arial", sans-serif;
+  color: #d5c7db;
+}
+
+#navigation li:hover {
+  background-color: #d3eca4;
+  color: #602a6d;
+  cursor: pointer;
+}
+
+.langLink {
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+footer {
+  background-color: #172720;
+  font-family: "Mukta", "Arial", sans-serif;
+  color: #749778;
+  font-size: 0.8rem;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 45px;
+  margin-top: 500px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 480px) {
+  .background {
+    background-image: url("images/cr_pen_vertical.gif");
+  }
+  #navigation {
+    font-size: 1.2rem;
+  }
+}
+
+#toolBox {
+  position: relative;
+  top: 50px;
+}
+
+.tool {
+  font-size: 1.3rem;
+  font-family: "Mukta", "Arial", sans-serif;
+  background-color: #445550;
+  color: whitesmoke;
+  border-radius: 25px;
+  display: block;
+  margin: 7px auto;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.tool:hover {
+  background-color: #602a6d;
+}
+/*# sourceMappingURL=tools_style.css.map */

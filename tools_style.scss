@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    }
+
+#navigation {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(96, 42, 109); 
+    list-style-type: none;
+    text-align: center;  
+    vertical-align: top;
+    padding: 0px;
+    margin: auto;    
+    font-size: 1.4rem;
+    z-index: 10;
+}
+
+#navigation ul {
+    margin: auto;
+    padding: 0px;
+}
+
+#navigation li {
+    display: inline;
+    padding: 0px 4%;
+    font-family: "Mukta", "Arial", sans-serif;
+    color: rgb(213, 199, 219);
+}
+
+#navigation li:hover {
+    background-color: rgb(211, 236, 164);
+    color:  rgb(96, 42, 109);
+    cursor: pointer;
+}
+
+.langLink {
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+footer {
+    background-color: rgb(23, 39, 32);
+    font-family: "Mukta", "Arial", sans-serif;
+    color: rgb(116, 151, 120);
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    height: 45px;
+    margin-top: 500px;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 480px) 
+ { .background {
+    background-image: url("images/cr_pen_vertical.gif");
+ }
+
+ #navigation {
+     font-size: 1.2rem;
+ }
+}
+
+#toolBox {
+    position: relative;
+    top: 50px;
+}
+
+.tool {
+    font-size: 1.3rem;
+    font-family: "Mukta", "Arial", sans-serif;
+    background-color: rgb(68, 85, 80);
+    color: whitesmoke;
+    border-radius: 25px;
+    display: block;
+    margin: 7px auto;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.tool:hover {
+    background-color:  rgb(96, 42, 109);
+}
