@@ -1,15 +1,16 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
 }
 
 body {
   background-color: whitesmoke;
   font-family: sans-serif;
+  height: 100%;
   margin: 0;
-  height: 100vh;
-  min-height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 #navigation {
@@ -60,22 +61,23 @@ footer {
   color: #749778;
   font-size: 0.8rem;
   text-align: center;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   height: 45px;
-  margin-top: 500px;
   z-index: 3;
+  margin-top: auto;
 }
 
 @media only screen and (max-width: 480px) {
   .background {
     background-image: url("images/cr_pen_vertical.gif");
   }
+
   #navigation {
     font-size: 1.2rem;
   }
 }
-
 #toolBox {
   position: relative;
   top: 50px;
@@ -84,7 +86,7 @@ footer {
 .tool {
   font-size: 1.3rem;
   font-family: "Mukta", "Arial", sans-serif;
-  background-color: #445550;
+  background-color: #2c2e2c;
   color: whitesmoke;
   border-radius: 25px;
   display: block;
@@ -95,6 +97,7 @@ footer {
 }
 
 .tool:hover {
-  background-color: #602a6d;
+  background-color: #72527a;
 }
+
 /*# sourceMappingURL=tools_style.css.map */

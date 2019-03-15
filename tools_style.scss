@@ -1,16 +1,18 @@
 html {
     box-sizing: border-box;
+    height: 100%;
+    margin: 0;
 }
 
 body {
     background-color: whitesmoke;
     font-family: sans-serif;
-    margin: 0;
-    height: 100vh;
-    min-height: 100vh;
-    width: 100vw;
-    }
-
+    height: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+    
 #navigation {
     position: absolute;
     top: 0px;
@@ -59,11 +61,12 @@ footer {
     color: rgb(116, 151, 120);
     font-size: 0.8rem;
     text-align: center;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100vw;
     height: 45px;
-    margin-top: 500px;
     z-index: 3;
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 480px) 
@@ -84,7 +87,7 @@ footer {
 .tool {
     font-size: 1.3rem;
     font-family: "Mukta", "Arial", sans-serif;
-    background-color: rgb(68, 85, 80);
+    background-color: rgb(44, 46, 44);
     color: whitesmoke;
     border-radius: 25px;
     display: block;
@@ -95,5 +98,5 @@ footer {
 }
 
 .tool:hover {
-    background-color:  rgb(96, 42, 109);
+    background-color:  rgb(114, 82, 122);
 }
