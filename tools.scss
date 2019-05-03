@@ -1,0 +1,47 @@
+//imports
+
+@import '../index/css/scss_partials/crocuses_variables';
+@import '../index/css/scss_partials/header&footer';
+@import '../index/css/scss_partials/theme_template';
+
+#toolBox {
+    position: relative;
+    top: 50px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.tool {
+    font-family: $font-stack;
+    background-color: rgb(226, 225, 228);
+    border-color: $header-color;
+    border-width: 1px;
+    border-style: solid;
+    flex: 0 1 auto;
+    margin: 15px 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.tool:hover {
+    background-color: $highlight-color;
+}
+
+.tool > * {
+    font-size: 0.8rem;
+    color: $footer-color;
+
+    summary {
+        font-size: 0.9rem;
+    }
+}
+
+.tool h1 {
+    font-size: 1.3rem;
+}

@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#navigation {
+  position: absolute;
+  top: 0px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#navigation {
+  background-color: #602a6d;
+  font-size: 1.2rem;
+  margin: auto;
+  width: 100vw;
+  height: 32px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: center;
+  z-index: 5;
+}
+#navigation ul {
+  margin: auto;
+  padding: 0px;
+}
+#navigation li {
+  display: inline;
+  padding: 0px 3%;
+  font-family: "Mukta", "Arial", sans-serif;
+  color: #d5c7db;
+}
+#navigation li:hover {
+  background-color: #d3eca4;
+  color: #602a6d;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.langLink {
+  font-size: 0.95rem;
+}
+
+footer {
+  background-color: #172720;
+  font-family: "Mukta", "Arial", sans-serif;
+  color: #749778;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100vw;
+  height: 45px;
+  z-index: 3;
+}
+
+.banner {
+  display: block;
+  text-align: left;
+  font-size: 3rem;
+  font-family: "Laila", "Times New Roman", sans-serif;
+  font-weight: bold;
+  background-color: rgba(235, 221, 221, 0.3);
+  color: rgba(20, 14, 22, 0.95);
+  padding-top: 3%;
+  padding-left: 4%;
+  z-index: 5;
+  position: relative;
+  top: 15vh;
+}
+
+.background {
+  background-image: url("images/cr_pen3.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 80vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/*mobile portrait*/
+@media only screen and (max-width: 480px) {
+  .background {
+    background-image: url("images/cr_pen_vertical.gif");
+  }
+
+  #navigation {
+    font-size: calc($header-font-size - 0.2);
+  }
+
+  footer {
+    font-size: calc($footer-font-size - 0.1);
+  }
+}
+#toolBox {
+  position: relative;
+  top: 50px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.tool {
+  font-family: "Mukta", "Arial", sans-serif;
+  background-color: #e2e1e4;
+  border-color: #602a6d;
+  border-width: 1px;
+  border-style: solid;
+  flex: 0 1 auto;
+  margin: 15px 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.tool:hover {
+  background-color: #d3eca4;
+}
+
+.tool > * {
+  font-size: 0.8rem;
+  color: #172720;
+}
+.tool > * summary {
+  font-size: 0.9rem;
+}
+
+.tool h1 {
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=tools.css.map */
