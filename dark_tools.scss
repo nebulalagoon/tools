@@ -1,0 +1,91 @@
+//imports
+
+@import '../index/css/scss_partials/dark_variables';
+@import '../index/css/scss_partials/header&footer';
+@import '../index/css/scss_partials/theme_template';
+
+//toolbox setup 
+
+body {
+    overflow-x: hidden;
+}
+
+#toolBox {
+    margin: 40px auto;
+    padding: 0px 10px;
+}
+
+.tool {
+    font-family: $font-stack;
+    background-color: rgb(205, 209, 212);
+    border-color: $header-color;
+    border-width: 1px;
+    border-style: solid;
+    width: 80vw;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.tool:hover {
+    background-color: $highlight-color;
+}
+
+.tool > * {
+    font-size: 0.8rem;
+    color: $footer-color;
+
+    summary {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.tool h1 {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 1.3rem;
+}
+
+#navigation {
+    padding-top: 10px;
+ }
+ 
+ footer {
+     padding-top: 5px;
+ }
+
+ @media only screen and (min-width: 480px) {
+
+    #navigation {
+        position: fixed;
+        margin-left: 0px;
+        width: 75px;
+        height: 100vh;
+    
+        ul {
+            vertical-align: center;
+            width: 75px;
+            height: 100vh;
+            margin-top: 50%;
+        }
+    
+        li {
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10vh;
+        }
+    }
+    
+    #toolBox {
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    
+}
